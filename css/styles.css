@@ -1,0 +1,74 @@
+/*header, barra de navegacion*/
+header {
+    background-color: #4F709C;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+#logo {
+    font-family: roboto;
+}
+.log {
+    display: flex;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+header div,
+header nav {
+    display: inline-block
+}
+header nav ul li {
+    display: inline;
+}
+
+
+/*main, contenido principal*/
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+h2, h3 {
+    color: white;
+}
+section div p{
+    color: white;
+}
+section p{
+    color: white;
+}
+.gamer {
+    width: 300px;
+}
+.happy {
+    width: 300px;
+}
+.product {
+    width: 200px;
+}
+
+
+/*footer*/
+footer {
+    background-color: #D1D9DA;
+    text-align: center;
+    padding: 1px;
+}
+footer p a{
+    text-decoration: none;
+}
