@@ -1,6 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /*header, barra de navegacion*/
 header {
     background-color: #4F709C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
 }
 @font-face {
     font-family: roboto;
@@ -13,7 +23,11 @@ header {
     display: flex;
     align-items: center;
 }
-ul {
+header .list li {
+    display: flex;
+    display: inline-block;
+}
+li {
     list-style-type: none;
 }
 ul li a {
@@ -22,14 +36,6 @@ ul li a {
     padding-left: 15px;
     padding-right: 15px;
 }
-header div,
-header nav {
-    display: inline-block
-}
-header nav ul li {
-    display: inline;
-}
-
 
 /*main, contenido principal*/
 
