@@ -39,7 +39,7 @@ ul li a {
 }
 
 
-/*header, main, contenido principal*/
+/*body, main, contenido principal*/
 
 body {
     height: 100vh;
@@ -51,13 +51,8 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
 }
-h2, h3 {
-    color: white;
-}
-p{
-    color: white;
-}
-section p{
+main h2, h3, p{
+    text-align: center;
     color: white;
 }
 .cliente {
@@ -76,8 +71,8 @@ section p{
     border-radius: 6px;
 }
 .card {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
     background: rgba(255, 255, 255, 0.192);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -89,6 +84,16 @@ section p{
     justify-content: center;
     align-items: center;
     border-radius: 6px;
+}
+button {
+    padding: 3px;
+    background-color: #000000;
+    color: yellow ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    scale: 1.2;
 }
 .gamer {
     width: 200px;
@@ -104,6 +109,7 @@ section p{
 }
 .product {
     width: 160px;
+    height: 160px;
 }
 
 
