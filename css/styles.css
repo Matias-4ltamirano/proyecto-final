@@ -51,6 +51,7 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
 }
+
 main h2, h3, p{
     text-align: center;
     color: white;
@@ -85,12 +86,16 @@ main h2, h3, p{
     align-items: center;
     border-radius: 6px;
 }
+.card p {
+    margin-top: 10px;
+}
 button {
     padding: 3px;
     background-color: #000000;
     color: yellow ;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 10px;
 }
 button:hover {
     scale: 1.2;
