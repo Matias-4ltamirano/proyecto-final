@@ -12,6 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 @font-face {
     font-family: roboto;
@@ -27,7 +28,7 @@ header {
 }
 header .list li {
     display: flex;
-    display: inline-block;
+    display: inline-flex;
 }
 header .list li:hover {
     transform: scale(1.2);
@@ -35,15 +36,15 @@ header .list li:hover {
 ul li a {
     text-decoration: none;
     color: black;
-    padding: 16px;
+    padding: 5px;
 }
-
 
 /*body, main, contenido principal*/
 
 body {
-    height: 100vh;
+    display: grid;
     width: 100%;
+    height: 100%;
     background-image: url(../img/backgroundimg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -51,14 +52,13 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
 }
-
 main h2, h3, p{
     text-align: center;
     color: white;
 }
 .cliente {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
     background: rgba(255, 255, 255, 0.192);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -123,6 +123,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.192);
     text-align: center;
     padding: 1px;
+    width: 100%;
 }
 footer p a{
     text-decoration: none;
