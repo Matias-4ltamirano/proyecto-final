@@ -9,7 +9,7 @@
     src: url(../fonts/roboto/Roboto-Regular.ttf);
 }
 
-/*header, barra de navegacion*/
+/*HEADER, BARRA DE NAVEGACION*/
 header {
     background-color: #4F709C;
     display: flex;
@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    grid-area: header;
 }
 #logo {
     font-family: roboto;
@@ -25,6 +26,12 @@ header {
 .log {
     display: flex;
     align-items: center;
+}
+.navmovil {
+    grid-area: nav;
+    background-color: #617591;
+    text-align: center;
+    display: none;
 }
 header .list li {
     display: flex;
@@ -40,7 +47,7 @@ ul li a {
 }
 
 
-/*body, main, contenido principal*/
+/*BODY, MAIN, CONTENIDO PRINCIPAL*/
 body {
     display: grid;
     width: 100%;
@@ -51,6 +58,15 @@ body {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+}
+main {
+    grid-area: main;
 }
 main h2, h3, p{
     text-align: center;
@@ -62,7 +78,7 @@ section {
     justify-items: center;
 }
 
-/*cards de clientes*/
+/*CARDS DE CLIENTES*/
 .cliente {
     width: 280px;
     height: 280px;
@@ -78,14 +94,14 @@ section {
     align-items: center;
     border-radius: 6px;
 }
-/*imgs de index*/
+/*IMGS DE INDEX*/
 .gamer, .happy, .ruso{
     width: 200px;
     height: 200px;
     border-radius: 5px;
 }
 
-/*cards de productos*/
+/*CARDS DE PRODUCTOS*/
 .cards {
     width: 280px;
     height: 280px;
@@ -104,7 +120,7 @@ section {
 .cards p {
     margin-top: 10px;
 }
-/*boton de cards*/
+/*BOTON DE CARDS*/
 button {
     padding: 3px;
     background-color: #000000;
@@ -116,22 +132,48 @@ button {
 button:hover {
     scale: 1.2;
 }
-/*productos*/
+/*PRODUCTOS*/
 .product {
     width: 160px;
     height: 160px;
 }
 
 
-/*footer*/
+/*FOOTER*/
 footer {
     background-color: rgba(255, 255, 255, 0.192);
     text-align: center;
     padding: 1px;
     width: 100%;
+    grid-area: footer;
 }
 footer p a{
     font-size: 17px;
     text-decoration: none;
     color: #000000;
+}
+
+
+/*MOVIL RESPONSIVE*/
+@media (max-width: 576px){
+    body {
+        grid-area: 
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+    }
+    section {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        max-height: 60px;
+    }
+    .navmovil {
+        display: block;
+    }
+    .list {
+        display: none;
+    }
 }
