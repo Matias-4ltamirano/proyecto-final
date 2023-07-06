@@ -5,78 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepe componentes</title>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/pepardo.ico">
+    <!--ESTILOS CSS-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!--header, barra de navegacion-->
     <header>
-        <div class="log">
-            <img src="../img/monkas.png" alt="pepe">
-            <h1 id="logo">PEPE COMPONENTES</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="log col-4">
+                    <img src="../img/monkas.png" alt="pepe">
+                    <h1 id="logo">PEPE COMPONENTES</h1>
+                </div>
+                <nav class="col-8">
+                    <ul class="list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./procesadores.html">Procesadores</a></li>
+                        <li><a href="./placasdevideo.html">Placas de video</a></li>
+                        <li><a href="./motherboards.html">Motherboards</a></li>
+                        <li><a href="./gabinetes.html">Gabinetes</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="list">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./placasdevideo.html">Placas de video</a></li>
-                <li><a href="./motherboards.html">Motherboards</a></li>
-                <li><a href="./gabinetes.html">Gabinetes</a></li>
-            </ul>
-        </nav>
     </header>
         <!--nav movil responsive-->
         <nav class="navmovil">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./placasdevideo.html">Placas de video</a></li>
-                <li><a href="./motherboards.html">Motherboards</a></li>
-                <li><a href="./gabinetes.html">Gabinetes</a></li>
-            </ul>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SECCIONES
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./procesadores.html">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="./placasdevideo.html">Placas de video</a></li>
+                    <li><a class="dropdown-item" href="./motherboards.html">Motherboards</a></li>
+                    <li><a class="dropdown-item" href="./gabinetes.html">Gabinetes</a></li>
+                </ul>
+            </div>
         </nav>
     <!--contenido principal-->
     <main>
         <h2>PROCESADORES</h2>
         <p>Variedad de procesadores de la mejor calidad y rendimiento</p>
         <h3>Procesadores disponibles</h3>
-        <section>
-            <div class="cards">
-                <img class="product" src="../img/procesadores/RYZEN7.PNG" alt="RYZEN7">
-                <p>AMD RYZEN 7 7800X3D 8C 16T</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/procesadores/I9.PNG" alt="I9">
-                <p>INTEL CORE I9 13900K 24C 32T</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/procesadores/RYZEN9.PNG" alt="RYZEN9">
-                <p>RYZEN 9 7950X 16C 32T</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/procesadores/r55600x.PNG" alt="RYZEN5">
-                <p>AMD RYZEN 5 5600x 6C 12T</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/procesadores/i713700k.PNG" alt="I7">
-                <p>INTEL CORE I7 13700K 16C 24T</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/procesadores/i513400f.PNG" alt="I5">
-                <p>RYZEN 9 7950X 6C 12T</p>
-                <button>COMPRAR</button>
+        <section class="container">
+            <div class="row">
+                <div class="cards col-2">
+                    <img class="product" src="../img/procesadores/RYZEN7.PNG" alt="RYZEN7">
+                    <p>AMD RYZEN 7 7800X3D 8C 16T</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/procesadores/I9.PNG" alt="I9">
+                    <p>INTEL CORE I9 13900K 24C 32T</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/procesadores/RYZEN9.PNG" alt="RYZEN9">
+                    <p>RYZEN 9 7950X 16C 32T</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/procesadores/r55600x.PNG" alt="RYZEN5">
+                    <p>AMD RYZEN 5 5600x 6C 12T</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/procesadores/i713700k.PNG" alt="I7">
+                    <p>INTEL CORE I7 13700K 16C 24T</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/procesadores/i513400f.PNG" alt="I5">
+                    <p>RYZEN 9 7950X 6C 12T</p>
+                    <button>COMPRAR</button>
+                </div>
             </div>
         </section>
     </main>
     <!--footer-->
     <footer>
-        <p>Copyright 2023</p>
-        <p><a href="#logo">Volver al comienzo</a></p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright 2023</p>
+                    <p><a href="#logo">Volver al comienzo</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

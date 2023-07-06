@@ -15,7 +15,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
     grid-area: header;
 }
@@ -33,9 +32,13 @@ header {
     text-align: center;
     display: none;
 }
-header .list li {
+.navmovil div a{
+    color: aqua;
+    background-color: black;
+}
+.list {
     display: flex;
-    display: inline-flex;
+    list-style-type: none;
 }
 header .list li:hover {
     transform: scale(1.2);
@@ -72,7 +75,10 @@ main h2, h3, p{
     text-align: center;
     color: white;
 }
-section {
+main .container .row{
+    justify-content: center;
+}
+.sinbootstrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -164,7 +170,7 @@ footer p a{
         "footer"
         ;
     }
-    section {
+    section , .sinbootstrap{
         grid-template-columns: 1fr;
     }
     footer {
@@ -172,6 +178,10 @@ footer p a{
     }
     .navmovil {
         display: block;
+    }
+    .navmovil ul {
+        list-style-type: none;
+        padding-left: 0;
     }
     .list {
         display: none;

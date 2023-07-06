@@ -5,34 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepe componentes</title>
+    <!--B00TSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="icon" href="./img/pepardo.ico">
+    <!--ESTILOS CSS-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--header, barra de navegacion-->
     <header>
-        <div class="log">
-            <img src="./img/monkas.png" alt="pepe">
-            <h1 id="logo">PEPE COMPONENTES</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="log col-4">
+                    <img src="./img/monkas.png" alt="pepe">
+                    <h1 id="logo">PEPE COMPONENTES</h1>
+                </div>
+                <nav class="col-8">
+                    <ul class="list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/procesadores.html">Procesadores</a></li>
+                        <li><a href="./pages/placasdevideo.html">Placas de video</a></li>
+                        <li><a href="./pages/motherboards.html">Motherboards</a></li>
+                        <li><a href="./pages/gabinetes.html">Gabinetes</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="list">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/procesadores.html">Procesadores</a></li>
-                <li><a href="./pages/placasdevideo.html">Placas de video</a></li>
-                <li><a href="./pages/motherboards.html">Motherboards</a></li>
-                <li><a href="./pages/gabinetes.html">Gabinetes</a></li>
-            </ul>
-        </nav>
     </header>
+    <!--nav movil responsive-->
     <nav class="navmovil">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/procesadores.html">Procesadores</a></li>
-            <li><a href="./pages/placasdevideo.html">Placas de video</a></li>
-            <li><a href="./pages/motherboards.html">Motherboards</a></li>
-            <li><a href="./pages/gabinetes.html">Gabinetes</a></li>
-        </ul>
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SECCIONES
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                <li><a class="dropdown-item" href="./pages/procesadores.html">Procesadores</a></li>
+                <li><a class="dropdown-item" href="./pages/placasdevideo.html">Placas de video</a></li>
+                <li><a class="dropdown-item" href="./pages/motherboards.html">Motherboards</a></li>
+                <li><a class="dropdown-item" href="./pages/gabinetes.html">Gabinetes</a></li>
+            </ul>
+        </div>
     </nav>
     <!--contenido principal-->
     <main>
@@ -40,37 +54,45 @@
         <p>En este lugar vas a encontrar los componentes mas top para jugar a los titulos actuales<br> 
         con la mejor calidad y rendimiento que solo el mejor hardware puede ofrecerte.</p>
         <h3>Fotos de clientes satisfechos.</h3>
-        <section>
-            <div class="cliente">
-                <img class="gamer" src="./img/pepegamer.jpg" alt="pepegamer">
-                <p>Aca tenemos al pepe gamer disfrutando de los juegos en su master race adquirida en pepe componentes</p>
-            </div>
-            <div class="cliente">
-                <img class="happy" src="./img/pepehappy.png" alt="pepedeveloper">
-                <p>Y por aca tenemos al pepe developer con su pc nueva listo para volverse un web developer</p>
-            </div>
-            <div class="cliente">
-                <img class="ruso" src="./img/peperuso.jpg" alt="peperuso">
-                <p>El pepe ruso bien fino como siempre</p>
-            </div>
-            <div class="cliente">
-                <img class="gamer" src="./img/pepedepre.PNG" alt="pepedepre">
-                <p>Este es el pepe depre sus amigos le dijeron que se compre un pc, se esta recuperando de a poco</p>
-            </div>
-            <div class="cliente">
-                <img class="gamer" src="./img/pepitogamer.PNG" alt="pepitogamer">
-                <p>Hermano menor de pepe gamer y gente bien fina</p>
-            </div>
-            <div class="cliente">
-                <img class="gamer" src="./img/tiltpepe.PNG" alt="pepetilteado">
-                <p>Pepe tilteado, no puede jugar mas de 2 competis en cs que ya se tiltea</p>
+        <section class="container">
+            <div class="row">
+                <div class="cliente col-2">
+                    <img class="gamer" src="./img/pepegamer.jpg" alt="pepegamer">
+                    <p>El pepe gamer disfrutando en su master race</p>
+                </div>
+                <div class="cliente col-2">
+                    <img class="happy" src="./img/pepehappy.png" alt="pepedeveloper">
+                    <p>Y por aca tenemos al pepe developer con su pc nueva listo para volverse un web developer</p>
+                </div>
+                <div class="cliente col-2">
+                    <img class="ruso" src="./img/peperuso.jpg" alt="peperuso">
+                    <p>El pepe ruso bien fino como siempre</p>
+                </div>
+                <div class="cliente col-2">
+                    <img class="gamer" src="./img/pepedepre.PNG" alt="pepedepre">
+                    <p>Este es el pepe depre sus amigos le dijeron que se compre un pc, se esta recuperando de a poco</p>
+                </div>
+                <div class="cliente col-2">
+                    <img class="gamer" src="./img/pepitogamer.PNG" alt="pepitogamer">
+                    <p>Hermano menor de pepe gamer y gente bien fina</p>
+                </div>
+                <div class="cliente col-2">
+                    <img class="gamer" src="./img/tiltpepe.PNG" alt="pepetilteado">
+                    <p>Pepe tilteado, no puede jugar mas de 2 competis en cs que ya se tiltea</p>
+                </div>
             </div>
         </section>
     </main>
     <!--footer-->
     <footer>
-        <p>Copyright 2023</p>
-        <p><a href="#logo">Volver al comienzo</a></p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright 2023</p>
+                    <p><a href="#logo">Volver al comienzo</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
