@@ -5,78 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepe componentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/pepardo.ico">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!--header, barra de navegacion-->
     <header>
-        <div class="log">
-            <img src="../img/monkas.png" alt="pepe">
-            <h1 id="logo">PEPE COMPONENTES</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="log col-4">
+                    <img src="../img/monkas.png" alt="pepe">
+                    <h1 id="logo">PEPE COMPONENTES</h1>
+                </div>
+                <nav class="col-8">
+                    <ul class="list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./procesadores.html">Procesadores</a></li>
+                        <li><a href="./placasdevideo.html">Placas de video</a></li>
+                        <li><a href="./motherboards.html">Motherboards</a></li>
+                        <li><a href="./gabinetes.html">Gabinetes</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <ul class="list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./placasdevideo.html">Placas de video</a></li>
-                <li><a href="./motherboards.html">Motherboards</a></li>
-                <li><a href="./gabinetes.html">Gabinetes</a></li>
-            </ul>
-        </nav>
     </header>
         <!--nav movil responsive-->
         <nav class="navmovil">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./placasdevideo.html">Placas de video</a></li>
-                <li><a href="./motherboards.html">Motherboards</a></li>
-                <li><a href="./gabinetes.html">Gabinetes</a></li>
-            </ul>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SECCIONES
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./procesadores.html">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="./placasdevideo.html">Placas de video</a></li>
+                    <li><a class="dropdown-item" href="./motherboards.html">Motherboards</a></li>
+                    <li><a class="dropdown-item" href="./gabinetes.html">Gabinetes</a></li>
+                </ul>
+            </div>
         </nav>
     <!--contenido principal-->
     <main>
         <h2>MOTHERBOARDS</h2>
         <p>Con cualquiera de estas te alcanza y sobra</p>
         <h3>Motherboards disponibles</h3>
-        <section class="sinbootstrap">
-            <div class="cards">
-                <img class="product" src="../img/motherboars/ASUS.PNG" alt="ASUS">
-                <p>ASUS ROG STRIX X670-E GAMING WIFI</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/motherboars/GIGABYTE.PNG" alt="GIGABYTE">
-                <p>GIGABYTE Z790 GAMING X AX</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/motherboars/MSI.PNG" alt="MSI">
-                <p>MSI MAG X570 TOMAHAWK WIFI</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/motherboars/asrockb650.PNG" alt="ASROCK">
-                <p>ASROCK B650 PRO</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/motherboars/msib650.PNG" alt="MSI">
-                <p>MSI B650 TOMAHAWK</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/motherboars/asusb550.PNG" alt="ASUS">
-                <p>ASUS ROG STRIX B550</p>
-                <button>COMPRAR</button>
+        <section class="container">
+            <div class="row">
+                <div class="cards col-2">
+                    <img class="product" src="../img/motherboars/ASUS.PNG" alt="ASUS">
+                    <p>ASUS ROG STRIX X670-E GAMING WIFI</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/motherboars/GIGABYTE.PNG" alt="GIGABYTE">
+                    <p>GIGABYTE Z790 GAMING X AX</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/motherboars/MSI.PNG" alt="MSI">
+                    <p>MSI MAG X570 TOMAHAWK WIFI</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/motherboars/asrockb650.PNG" alt="ASROCK">
+                    <p>ASROCK B650 PRO</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/motherboars/msib650.PNG" alt="MSI">
+                    <p>MSI B650 TOMAHAWK</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/motherboars/asusb550.PNG" alt="ASUS">
+                    <p>ASUS ROG STRIX B550</p>
+                    <button>COMPRAR</button>
+                </div>
             </div>
         </section>
     </main>
     <!--footer-->
     <footer>
-        <p>Copyright 2023</p>
-        <p><a href="#logo">Volver al comienzo</a></p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright 2023</p>
+                    <p><a href="#logo">Volver al comienzo</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

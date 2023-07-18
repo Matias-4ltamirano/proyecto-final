@@ -1,0 +1,41 @@
+/*HEADER, BARRA DE NAVEGACION*/
+header {
+  background-color: #4F709C;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  grid-area: header;
+}
+header .log {
+  display: flex;
+  align-items: center;
+}
+header .log #logo {
+  font-family: roboto;
+  font-size: 14px;
+}
+header nav .list {
+  display: flex;
+  list-style-type: none;
+}
+header nav .list li:hover {
+  transform: scale(1.05);
+  transition: 600ms;
+}
+header nav .list li:hover a {
+  color: aliceblue;
+}
+
+.navmovil {
+  grid-area: nav;
+  background-color: #617591;
+  text-align: center;
+  display: none;
+}
+.navmovil a {
+  color: aqua;
+  background-color: black;
+}
+
+/*# sourceMappingURL=headernav.css.map */

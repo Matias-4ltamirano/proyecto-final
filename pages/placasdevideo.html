@@ -5,78 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepe componentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/pepardo.ico">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!--header, barra de navegacion-->
     <header>
-        <div class="log">
-            <img src="../img/monkas.png" alt="pepe">
-            <h1 id="logo">PEPE COMPONENTES</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="log col-4">
+                    <img src="../img/monkas.png" alt="pepe">
+                    <h1 id="logo">PEPE COMPONENTES</h1>
+                </div>
+                <nav class="col-8">
+                    <ul class="list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./procesadores.html">Procesadores</a></li>
+                        <li><a href="./placasdevideo.html">Placas de video</a></li>
+                        <li><a href="./motherboards.html">Motherboards</a></li>
+                        <li><a href="./gabinetes.html">Gabinetes</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <ul class="list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./placasdevideo.html">Placas de video</a></li>
-                <li><a href="./motherboards.html">Motherboards</a></li>
-                <li><a href="./gabinetes.html">Gabinetes</a></li>
-            </ul>
-        </nav>
     </header>
         <!--nav movil responsive-->
         <nav class="navmovil">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./procesadores.html">Procesadores</a></li>
-                <li><a href="./placasdevideo.html">Placas de video</a></li>
-                <li><a href="./motherboards.html">Motherboards</a></li>
-                <li><a href="./gabinetes.html">Gabinetes</a></li>
-            </ul>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SECCIONES
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="./procesadores.html">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="./placasdevideo.html">Placas de video</a></li>
+                    <li><a class="dropdown-item" href="./motherboards.html">Motherboards</a></li>
+                    <li><a class="dropdown-item" href="./gabinetes.html">Gabinetes</a></li>
+                </ul>
+            </div>
         </nav>
     <!--contenido principal-->
     <main>
         <h2>PLACAS DE VIDEO</h2>
         <p>Plaquitas bien finas de gama alta 20/10 y god</p>
         <h3>Placas de video disponibles</h3>
-        <section class="sinbootstrap">
-            <div class="cards">
-                <img class="product" src="../img/placasdevideo/4070TI.PNG" alt="4070TI">
-                <p>AORUS GEFORCE RTX 4070TI 12GB</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/placasdevideo/RX7900XT.PNG" alt="7900XT">
-                <p>GIGABYTE RADEON RX 7900XT 20GB</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/placasdevideo/4090.PNG" alt="4090">
-                <p>ASUS ROG STRIX GEFORCE RTX 4090 24GB</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/placasdevideo/rtx3080.PNG" alt="3080">
-                <p>ASUS TUF RTX 3080 12GB</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/placasdevideo/rx6700xt.PNG" alt="6700XT">
-                <p>ASUS ROG STRIX RADEON RX 6700XT 12GB</p>
-                <button>COMPRAR</button>
-            </div>
-            <div class="cards">
-                <img class="product" src="../img/placasdevideo/rtx4080.PNG" alt="4080">
-                <p>MSI SUPRIM GEFORCE RTX 4080 16GB</p>
-                <button>COMPRAR</button>
+        <section class="container">
+            <div class="row">
+                <div class="cards col-2">
+                    <img class="product" src="../img/placasdevideo/4070TI.PNG" alt="4070TI">
+                    <p>AORUS GEFORCE RTX 4070TI 12GB</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/placasdevideo/RX7900XT.PNG" alt="7900XT">
+                    <p>GIGABYTE RADEON RX 7900XT 20GB</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/placasdevideo/4090.PNG" alt="4090">
+                    <p>ASUS ROG STRIX GEFORCE RTX 4090 24GB</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/placasdevideo/rtx3080.PNG" alt="3080">
+                    <p>ASUS TUF RTX 3080 12GB</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/placasdevideo/rx6700xt.PNG" alt="6700XT">
+                    <p>ASUS ROG STRIX RADEON RX 6700XT 12GB</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="cards col-2">
+                    <img class="product" src="../img/placasdevideo/rtx4080.PNG" alt="4080">
+                    <p>MSI SUPRIM GEFORCE RTX 4080 16GB</p>
+                    <button>COMPRAR</button>
+                </div>
             </div>
         </section>
     </main>
     <!--footer-->
     <footer>
-        <p>Copyright 2023</p>
-        <p><a href="#logo">Volver al comienzo</a></p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright 2023</p>
+                    <p><a href="#logo">Volver al comienzo</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
