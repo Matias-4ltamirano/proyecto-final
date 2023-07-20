@@ -1,86 +1,17 @@
-/*BODY, MAIN, CONTENIDO PRINCIPAL*/
-body {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/backgroundimg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
-  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
-}
-body main {
-  grid-area: main;
-}
-body main h2, body main h3, body main p {
-  text-align: center;
-  color: white;
-}
-body main .container .row {
-  justify-content: center;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 80 |                         background-color: $color-principal;
+ *    |                                           ^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\bodymaincont.scss 80:43  root stylesheet */
 
-/*CARDS DE CLIENTES*/
-.cliente {
-  width: 280px;
-  height: 280px;
-  background: rgba(255, 255, 255, 0.192);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  align-content: center;
-  padding: 5px;
-  margin: 7px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-  /*IMGS DE INDEX*/
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 80 \2502                          background-color: $color-principal;\d\a    \2502                                            ^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\bodymaincont.scss 80:43  root stylesheet";
 }
-.cliente .gamer, .cliente .happy, .cliente .ruso {
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
-}
-
-/*CARDS DE PRODUCTOS*/
-.cards {
-  width: 280px;
-  height: 280px;
-  background: rgba(255, 255, 255, 0.192);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  align-content: center;
-  padding: 5px;
-  margin: 7px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-  /*PRODUCTOS*/
-  /*BOTON DE CARDS*/
-}
-.cards .product {
-  width: 160px;
-  height: 160px;
-}
-.cards p {
-  margin-top: 10px;
-}
-.cards button {
-  padding: 3px;
-  background-color: #617591;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-.cards button:hover {
-  scale: 1.2;
-  transition: 600ms;
-}
-
-/*# sourceMappingURL=bodymaincont.css.map */

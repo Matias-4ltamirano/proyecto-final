@@ -1,6 +1,6 @@
 /*HEADER, BARRA DE NAVEGACION*/
 header {
-    background-color: #4F709C;
+    background-color: $color-principal;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,12 +19,14 @@ header {
         display: flex;
         list-style-type: none;
             li {
+                a {
+                color: aliceblue;
+                text-decoration: none;
+            }
+                padding: 10px;
                 &:hover {
                 transform: scale(1.05); 
                 transition: 600ms;
-                    a {
-                    color: aliceblue;
-                }
             }
         }
     }
@@ -34,11 +36,11 @@ header {
 
 .navmovil {
     grid-area: nav;
-    background-color: #617591;
+    background-color: $color-principal;
     text-align: center;
     display: none;
         a{
-        color: aqua;
-        background-color: black;
+        color: map-get($map: $fondos, $key:tercero );
+        background-color: $color-principal;
     }
 } 

@@ -1,3 +1,16 @@
+/*Extend*/
+.efecto-vidrio {
+    background: rgba(255, 255, 255, 0.192);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+/*mixin*/
+@mixin flex($display,$ejex,$ejey) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*BODY, MAIN, CONTENIDO PRINCIPAL*/
 body {
     display: grid;
@@ -24,68 +37,61 @@ body {
         .container {
             .row{
                 justify-content: center;
+                    /*CARDS DE CLIENTES*/
+                    .cliente {
+                    width: 280px;
+                    height: 280px;
+                    @extend .efecto-vidrio;
+                    align-content: center;
+                    padding: 5px;
+                    margin: 7px;
+                    @include flex(flex,center ,center );
+                    flex-direction: column;
+                    border-radius: 6px;
+                    /*IMGS DE INDEX*/
+                    .gamer, .happy, .ruso{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 5px;
+                    }
+                }
+                /*CARDS DE PRODUCTOS*/
+                .cards {
+                    width: 280px;
+                    height: 280px;
+                    @extend .efecto-vidrio;
+                    align-content: center;
+                    padding: 5px;
+                    margin: 7px;
+                    @include flex(flex,center, center );
+                    flex-direction: column;
+                    border-radius: 6px;
+                    /*PRODUCTOS*/
+                        .product {
+                        width: 160px;
+                        height: 160px;
+                    }
+                    p {
+                        margin-top: 10px;
+                    }
+                    /*BOTON DE CARDS*/
+                        button {
+                        padding: 3px;
+                        background-color: $color-principal;
+                        color: white ;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        margin-top: 10px;
+                            &:hover {
+                                scale: 1.2;
+                                transition: 600ms;
+                            }
+                    }
+                }
             }
         }
     }
 }
 
-/*CARDS DE CLIENTES*/
-.cliente {
-    width: 280px;
-    height: 280px;
-    background: rgba(255, 255, 255, 0.192);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    align-content: center;
-    padding: 5px;
-    margin: 7px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    /*IMGS DE INDEX*/
-    .gamer, .happy, .ruso{
-        width: 200px;
-        height: 200px;
-        border-radius: 5px;
-    }
-}
 
-/*CARDS DE PRODUCTOS*/
-.cards {
-    width: 280px;
-    height: 280px;
-    background: rgba(255, 255, 255, 0.192);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    align-content: center;
-    padding: 5px;
-    margin: 7px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    /*PRODUCTOS*/
-        .product {
-        width: 160px;
-        height: 160px;
-    }
-    p {
-        margin-top: 10px;
-    }
-    /*BOTON DE CARDS*/
-        button {
-        padding: 3px;
-        background-color: #617591;
-        color: white ;
-        border-radius: 10px;
-        cursor: pointer;
-        margin-top: 10px;
-            &:hover {
-                scale: 1.2;
-                transition: 600ms;
-            }
-    }
-}
+

@@ -1,41 +1,17 @@
-/*HEADER, BARRA DE NAVEGACION*/
-header {
-  background-color: #4F709C;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  grid-area: header;
-}
-header .log {
-  display: flex;
-  align-items: center;
-}
-header .log #logo {
-  font-family: roboto;
-  font-size: 14px;
-}
-header nav .list {
-  display: flex;
-  list-style-type: none;
-}
-header nav .list li:hover {
-  transform: scale(1.05);
-  transition: 600ms;
-}
-header nav .list li:hover a {
-  color: aliceblue;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 3 |     background-color: $color-principal;
+ *   |                       ^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\headernav.scss 3:23  root stylesheet */
 
-.navmovil {
-  grid-area: nav;
-  background-color: #617591;
-  text-align: center;
-  display: none;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color-principal;\d\a   \2502                        ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\headernav.scss 3:23  root stylesheet";
 }
-.navmovil a {
-  color: aqua;
-  background-color: black;
-}
-
-/*# sourceMappingURL=headernav.css.map */
