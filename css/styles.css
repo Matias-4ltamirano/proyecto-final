@@ -10,39 +10,10 @@ header {
   width: 100%;
   grid-area: header;
 }
-header .log {
-  display: flex;
-  align-items: center;
-}
-header .log #logo {
+header #logo {
   font-family: roboto;
   font-size: 14px;
-}
-header nav .list {
-  display: flex;
-  list-style-type: none;
-}
-header nav .list li {
-  padding: 10px;
-}
-header nav .list li a {
-  color: aliceblue;
-  text-decoration: none;
-}
-header nav .list li:hover {
-  transform: scale(1.05);
-  transition: 600ms;
-}
-
-.navmovil {
-  grid-area: nav;
-  background-color: #4F709C;
-  text-align: center;
-  display: none;
-}
-.navmovil a {
-  color: rgb(200, 36, 9);
-  background-color: #4F709C;
+  color: azure;
 }
 
 /*body, main, contenido principal*/
@@ -134,7 +105,7 @@ body main .container .row .cards button:hover {
 /*footer*/
 /*FOOTER*/
 footer {
-  background-color: rgba(255, 255, 255, 0.192);
+  background-color: rgba(100, 100, 148, 0.589);
   text-align: center;
   padding: 1px;
   width: 100%;
@@ -151,6 +122,8 @@ footer p a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
   font-family: roboto;
 }
 

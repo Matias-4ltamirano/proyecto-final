@@ -6,41 +6,13 @@ header {
     justify-content: space-between;
     width: 100%;
     grid-area: header;
-        .log {
-        display: flex;
-        align-items: center;
             #logo {
         font-family: roboto;
         font-size: 14px;
+        color: azure;
         }
     }
-    nav {
-        .list {
-        display: flex;
-        list-style-type: none;
-            li {
-                a {
-                color: aliceblue;
-                text-decoration: none;
-            }
-                padding: 10px;
-                &:hover {
-                transform: scale(1.05); 
-                transition: 600ms;
-            }
-        }
-    }
-    }
-}
 
 
-.navmovil {
-    grid-area: nav;
-    background-color: $color-principal;
-    text-align: center;
-    display: none;
-        a{
-        color: map-get($map: $fondos, $key:tercero );
-        background-color: $color-principal;
-    }
-} 
+
+
