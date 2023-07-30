@@ -1,15 +1,4 @@
-/*Extend*/
-.efecto-vidrio {
-    background: rgba(255, 255, 255, 0.192);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-}
-/*mixin*/
-@mixin flex($display,$ejex,$ejey) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /*BODY, MAIN, CONTENIDO PRINCIPAL*/
 body {
