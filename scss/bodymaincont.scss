@@ -44,6 +44,29 @@ body {
                     border-radius: 5px;
                     }
                 }
+                /*ESTILOS DE TESTIMONIOS*/
+                .testimonios {
+                    width: 400px;
+                    height: 550px;
+                    background-image: linear-gradient(to top right, rgba(255, 255, 0, 0.349), rgba(255, 0, 0, 0.349) );
+                    align-content: center;
+                    padding: 5px;
+                    margin: 7px;
+                    @include flex(flex,center,center );
+                    flex-direction: column;
+                    border-radius: 6px;
+                }
+                .redes {
+                    width: 350px;
+                    height: 350px;
+                    background-image: linear-gradient(to top right, rgba(0, 255, 242, 0.856), rgba(255, 0, 0, 0.349) );
+                    align-content: center;
+                    padding: 5px;
+                    margin: 7px;
+                    @include flex(flex,center,center );
+                    flex-direction: column;
+                    border-radius: 6px;
+                }
                 /*CARDS DE PRODUCTOS*/
                 .cards {
                     width: 280px;

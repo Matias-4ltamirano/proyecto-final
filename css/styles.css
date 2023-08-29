@@ -50,6 +50,7 @@ body main h2, body main h3, body main p {
 body main .container .row {
   justify-content: center;
   /*CARDS DE CLIENTES*/
+  /*ESTILOS DE TESTIMONIOS*/
   /*CARDS DE PRODUCTOS*/
 }
 body main .container .row .cliente {
@@ -69,6 +70,32 @@ body main .container .row .cliente .gamer, body main .container .row .cliente .h
   width: 200px;
   height: 200px;
   border-radius: 5px;
+}
+body main .container .row .testimonios {
+  width: 400px;
+  height: 550px;
+  background-image: linear-gradient(to top right, rgba(255, 255, 0, 0.349), rgba(255, 0, 0, 0.349));
+  align-content: center;
+  padding: 5px;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+}
+body main .container .row .redes {
+  width: 350px;
+  height: 350px;
+  background-image: linear-gradient(to top right, rgba(0, 255, 242, 0.856), rgba(255, 0, 0, 0.349));
+  align-content: center;
+  padding: 5px;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
 }
 body main .container .row .cards {
   width: 280px;
